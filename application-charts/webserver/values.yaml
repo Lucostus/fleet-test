@@ -39,5 +39,5 @@ ingress:
   namespace: default
   host: dev.lucostus.at
   path: "/"
-  serviceName: webserver
+  serviceName: webserver-service
   servicePort: 80
