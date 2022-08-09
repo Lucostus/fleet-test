@@ -1,0 +1,36 @@
+# Deployment object
+deployment:
+  enabled: true
+  name: webserver
+  namespace: default
+  replicas: 3
+  appName: webserver
+  role: api
+  containerName: nginx
+  imageRepository: nginx
+  port: 80
+# Horizontal Pod Autoscaler
+hpa:
+  enabled: true
+  name: webserver-hpa
+  namespace: default
+# Service object
+service:
+  enabled: false
+# Service Account object
+serviceAccount:
+  enabled: true
+  name: webserver-service-account
+  namespace: default
+# Namespace object
+namespace:
+  enabled: false
+# Ingress 
+ingress:
+  enabled: true
+  name: webserver
+  namespace: default
+  host: dev.lucostus.at
+  path: "/"
+  serviceName: webserver
+  servicePort: 80
