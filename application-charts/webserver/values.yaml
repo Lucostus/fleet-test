@@ -17,7 +17,7 @@ hpa:
   namespace: default
 # Service object
 service:
-  enabled: false
+  enabled: true
 # Service Account object
 serviceAccount:
   enabled: true
