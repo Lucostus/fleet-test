@@ -20,4 +20,8 @@ spec:
                 name: {{ .Values.ingress.serviceName }}
                 port:
                   number: {{ .Values.ingress.servicePort }}
+  tls:
+   - hosts:
+     - dev.lucostus.at
+     secretName: dev-lucostus-at-tls
 {{- end }}
