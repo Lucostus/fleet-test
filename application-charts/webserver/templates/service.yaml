@@ -5,7 +5,7 @@ metadata:
   name: {{ .Values.service.name }}
   namespace: {{ .Values.service.namespace }}
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: {{ .Values.service.appName }}
   type: {{ .Values.service.type }}
