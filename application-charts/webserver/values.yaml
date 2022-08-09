@@ -7,7 +7,8 @@ deployment:
   appName: webserver
   role: api
   containerName: nginx
-  imageRepository: nginx:latest
+  imageRepository: nginx
+  imageTag: latest
   port: 80
 # Horizontal Pod Autoscaler
 hpa:
