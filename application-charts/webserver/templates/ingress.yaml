@@ -6,8 +6,6 @@ metadata:
   namespace: {{ .Values.ingress.namespace }}
   labels:
     app: {{ .Values.ingress.name }}
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
     - host: {{ .Values.ingress.host }}
