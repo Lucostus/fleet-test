@@ -1,0 +1,10 @@
+apiVersion: v2
+description: The orders microservice helm chart
+keywords:
+  - web
+maintainers:
+  - email: lu@lucostus.at
+    name: Constantin Winkler
+name: webserver
+appVersion: "0.1.0"
+version: 0.1.0
