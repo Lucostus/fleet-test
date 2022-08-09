@@ -18,6 +18,12 @@ hpa:
 # Service object
 service:
   enabled: true
+  name: webserver-service
+  namespace: default
+  appName: webserver
+  type: ClusterIP
+  servicePort: 80
+  targetPort: 80
 # Service Account object
 serviceAccount:
   enabled: true
