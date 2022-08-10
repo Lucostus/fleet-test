@@ -6,8 +6,8 @@ deployment:
   replicas: 3
   appName: webserver
   role: api
-  containerName: nginx
-  imageRepository: nginx
+  containerName: landing-page
+  imageRepository: lucostus/landing-page
   imageTag: latest
   port: 80
 # Horizontal Pod Autoscaler
